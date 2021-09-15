@@ -1,0 +1,67 @@
+/* 
+  first-child 
+  only-child
+  last-child
+  nth-child
+  nth-last-child
+
+  first-of-type
+  nth-of-type 
+      - looks only for tag not other selectors while making the decision
+  only-of-type
+  last-of-type
+
+  empty
+  
+  :not(selector, selector)
+
+  ::first-letter
+  ::first-line
+
+  ::before
+  ::after
+  */
+
+.list-item:first-child {
+  color: #1f1;
+}
+
+/* not working as non is first child */
+.list-item2:first-child {
+  color: #f11;
+}
+
+.list-item:nth-child(3) {
+  color: #1ff;
+}
+.list-item2:nth-last-child(2) {
+  color: #ff1;
+}
+
+.list-item:only-child {
+  color: #11f;
+}
+
+.list-item:last-child:not(:only-child) {
+  color: #f1f;
+}
+
+p:first-of-type {
+  color: #b7b;
+}
+
+p:nth-of-type(3) {
+  color: #7bb;
+}
+
+p:nth-of-type(2n)::first-letter {
+  text-decoration: line-through;
+}
+
+.list-item:empty {
+  border: 1px solid #333;
+}
+.list-item:empty::before {
+  content: "♥";
+}
+
