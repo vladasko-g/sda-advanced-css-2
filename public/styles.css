@@ -65,3 +65,42 @@ p:nth-of-type(2n)::first-letter {
   content: "♥";
 }
 
+
+/* 
+  display: flex;
+           inline-flex - container behaves like inline
+  flex-direction: row! | column | row-reverse | col-reverse
+    - of main axis
+  flex-wrap: no-wrap | wrap | wrap-reverse
+    - new line items may have different heights depending on the row not all rows
+  flex-flow: flex-direction flex-wrap
+  justify-content: center | space-between | space-around | justify-content | !flex-start
+    - where items sit on main axis
+  align-items: center | baseline | flex-start | !stretch
+    - where items sit on cross axis
+  align-content: space-around | center | baseline | flex-start | stretch
+
+  flex: flex-grow flex-shrink flex-basis 
+    - if only px flex basis
+  flex-grow: number
+    - 0 no
+  flex-shrink: number | 200px
+    - initial size
+  flex-basis: 200px |
+  align-self
+  order: number
+    - !0
+
+*/
+
+.flex-container {
+  display: flex;
+  height: 700px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #dcd;
+}
+
+.flex-container ul {
+  list-style: none;
+}
