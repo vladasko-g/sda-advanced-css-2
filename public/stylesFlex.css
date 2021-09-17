@@ -8,8 +8,9 @@
   flex-flow: flex-direction flex-wrap
   justify-content: center | space-between | space-around | justify-content | !flex-start
     - where items sit on main axis
-  align-items: center | baseline | flex-start | !stretch
+  align-items: center | baseline | flex-start | !stretch | start *
     - where items sit on cross axis
+    * along writing-mode and not flex direction
   align-content: space-around | center | baseline | flex-start | stretch
     - space around items in cross axis
 
