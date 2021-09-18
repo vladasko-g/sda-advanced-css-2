@@ -40,6 +40,24 @@
   navigation
 */
 
+/* 
+display property aspects:
+	inline
+		- has no height and width
+		- margin - horizontal only
+		- padding - horizontal works normally but vertically overflows parent
+    - can have other elements on horizontal sides
+	
+	inline-block
+		- has completely functioning height, width, margin, and padding
+    - can have other elements on horizontal sides
+	
+	block
+		- starts on a new line
+		- defaults full width
+    - normally can't have other elements on horizontal sides
+*/
+
 body {
   margin: 0;
 }
