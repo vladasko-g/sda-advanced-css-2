@@ -1,27 +1,3 @@
-/* 
-  first-child 
-  only-child
-  last-child
-  nth-child
-  nth-last-child
-
-  first-of-type
-  nth-of-type 
-      - looks only for tag not other selectors while making the decision
-  only-of-type
-  last-of-type
-
-  empty
-  
-  :not(selector, selector)
-
-  ::first-letter
-  ::first-line
-
-  ::before
-  ::after
-  */
-
 .list-item:first-child {
   color: #1f1;
 }
