@@ -19,6 +19,7 @@
   flex-grow: number
     - 0 no
   flex-shrink: number | 200px
+    - used if all items are wider than container
     - initial size
   flex-basis: 200px |
   align-self
